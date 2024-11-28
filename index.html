@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="toggle-buttons">
+            <button id="personalBtn" class="active" onclick="showForm('personal')">PERSONAL</button>
+            <button id="businessBtn" onclick="showForm('business')">BUSINESS</button>
+        </div>
+
+        <!--  elpersonal Form y3m y7ya -->
+        <div id="personalForm" class="form-content">
+            <h3 style="text-align: start;">Your personal information</h3>
+            <p>Please ensure that you enter the information in accordance with official documents.</p>
+            <input type="text" placeholder="Full name">
+            <input type="text" placeholder="ID Number">
+            <input type="text" placeholder="+966XXXXXXXXXX">
+            <button class="send-otp">Send OTP</button>
+            <input type="text" placeholder="Your OTP Number">
+            <input type="email" placeholder="Email">
+            <input type="date" placeholder="mm/dd/yyyy">
+            <button class="submit-btn">CONTINUE</button>
+        </div>
+
+        <!--  elbusiness form  -->
+        <div id="businessForm" class="form-content" style="display: none;">
+            <h3 style="text-align: start;">Your business information</h3>
+            <p >Please ensure that you enter your business details accurately.</p>
+            <input type="text" placeholder="Company Name">
+            <input type="email" placeholder="Company Email">
+            <input type="text" placeholder="+966XXXXXXX">
+            <input type="text" placeholder="C.R Number ">
+            <button class="send-otp">Send OTP</button>
+            <input type="text" placeholder="your OTP Number">
+            <input type="text" placeholder="ID Number">
+            <input type="text" placeholder="Authorized Person mobile name">
+            <input type="text" placeholder="Authorized Person Name ">
+            <input type="text" placeholder="Legal Repersentative's Name ">
+            <input type="text" placeholder="Legal Repersentative's ID Number">
+            <input type="date" placeholder="mm/dd/yyyy">
+            <input type="" placeholder="VAT registration">
+            <p style="text-align: start; font-size: 16px;font-weight: 100;color: #4c0b86;">Please Add vat and registration </p>
+            <button id="upload" class="add-file">Browse</button>
+            <input type="file" id="input" style="display:none;">
+            <button class="submit-btn">CONTINUE</button>
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
